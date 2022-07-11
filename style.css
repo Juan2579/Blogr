@@ -89,6 +89,9 @@ html{
     gap: 20px;
 }
 .header_buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-width: 100px;
     max-width: 140px;
@@ -164,11 +167,12 @@ html{
     position: absolute;
     top: -200px;
     width: 100%;
+    max-width: 400px;
     min-height: 390px;
-    max-height: 490px;
+    max-height: 420px;
     z-index: 1;
 }
-.main_art .circles{
+/* .main_art .circles{
     position: absolute;
     top: -200px;
     width: 100%;
@@ -177,7 +181,7 @@ html{
     height: 500px;
     object-fit: fill;
     z-index: 0;
-}
+} */
 .main_art h2{
     padding-top: 100px;
     width: 80%;
@@ -195,4 +199,85 @@ html{
     line-height: 2.5rem;
     color: hsl(240, 2%, 79%);
     z-index: 3;
+}
+
+/* laptop section */
+.main_laptop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.main_laptop h2{
+    padding-top: 10px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2.2em;
+    color: hsl(208, 49%, 24%);
+}
+.main_laptop .laptop_image{
+    width: 100%;
+    min-width: 288px;
+    max-width: 500px;
+    max-height: 420px;
+}
+.main_laptop p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: hsl(207, 13%, 34%);
+}
+
+/* footer */
+.footer_container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 110px;
+}
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footer_content ul:first-child{
+    margin-top: 70px;
+}
+.footer_content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+}
+.footer_content li:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.footer_content li{
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: hsl(240, 2%, 79%);
 }

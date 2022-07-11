@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name=”robots”  content=”index,follow”>
+    <link rel="icon" type="image/png" sizes="32x32" href=""> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Blogr</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 720px)">
 </head>
 <body>
     <header class="header_container">
-        <picture>
+        <!-- <picture>
             <source media="(min-width: 720px)" srcset="./assets/images/bg-pattern-intro-desktop.svg">
             <img class="header_background" src="./assets/images/bg-pattern-intro-mobile.svg" alt="Background header">
-        </picture>
+        </picture> -->
         <nav class="header_navbar">
             <section class ="navbar_content">
                 <img class="navbar_logo" src="./assets/icons/logo.svg" alt="">
@@ -47,14 +51,50 @@
 
         <section class="main_art">
             <img class="phones" src="./assets/images/illustration-phones.svg" alt="">
-            <img class="circles" src="./assets/images/bg-pattern-circles.svg" alt="">
+            <!-- <img class="circles" src="./assets/images/bg-pattern-circles.svg" alt=""> -->
             <h2>State of the Art Infrastructure</h2>
             <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
         </section>
+
+        <section class="main_laptop">
+            <picture>
+                <source media="(min-width: 720px)" srcset="./assets/images/illustration-laptop-desktop.svg">
+                <img class="laptop_image" src="./assets/images/illustration-laptop-mobile.svg" alt="">
+            </picture>
+            <h2>Free, open, simple</h2>
+            <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+            <h2>Powerful tooling</h2>
+            <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="footer_container">
+        <section class="footer_content">
+            <img class="navbar_logo" src="./assets/icons/logo.svg" alt="">
+            <section class="footer_links">
+                <ul>
+                    <li>Product</li>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                </ul>
+                <ul>
+                    <li>Company</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+                <ul>
+                    <li>Connect</li>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>Linkedin</li>
+                </ul>
+            </section>
+        </section>
     </footer>
 </body>
 </html>
