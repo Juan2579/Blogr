@@ -1,0 +1,197 @@
+:root{
+    /*Primary */
+
+    --Light-red: hsl(356, 100%, 66%);/* (CTA text)*/
+    --Very-light-red: hsl(355, 100%, 74%); /*(CTA hover background)*/
+    --Very-dark-blue:  hsl(208, 49%, 24%); /* (headings) */
+
+}
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.header_container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    padding-top: 60px;
+    border-bottom-left-radius: 120px;
+}
+.header_background{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+.header_navbar{
+    width: 100%;
+    height: auto;
+    
+}
+.navbar_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+.navbar_logo{
+    width: 100%;
+    max-width: 100px;
+    max-height: 40px;
+}
+.navbar_hamburger{
+    width: 100%;
+    max-width: 35px;
+    max-height: 25px;
+}
+.header_content{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header_content h1{
+    font-size: 3.3rem;
+    line-height: 4.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.header_content h2{
+    padding-bottom: 50px;
+    padding-top: 20px;
+    width: 95%;
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+.header_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header_buttons button{
+    width: 100%;
+    min-width: 100px;
+    max-width: 140px;
+    min-height: 40px;
+    max-height: 50px;
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 25px;
+    background: none;
+    font-family: 'Overpass', sans-serif;
+}
+.header_buttons a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+/* main */
+.main_container{
+    width: 100%;
+    margin: 40px 0;
+    height: auto;
+}
+ /* editor */
+.main_editor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+}
+.main_editor h2{
+    padding-top: 10px;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2.2em;
+    color: hsl(208, 49%, 24%);
+}
+.main_editor .editor_image{
+    width: 100%;
+    min-width: 288px;
+    max-width: 500px;
+}
+.main_editor p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    color: hsl(207, 13%, 34%);
+}
+
+   /* art */
+.main_art{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 580px;
+    max-height: 680px;
+    margin-top: 300px;
+    text-align: center;
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 110px;
+}
+.main_art .phones{
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    min-height: 390px;
+    max-height: 490px;
+    z-index: 1;
+}
+.main_art .circles{
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    min-width: 550px;
+    max-width: 650px;
+    height: 500px;
+    object-fit: fill;
+    z-index: 0;
+}
+.main_art h2{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3.3rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    z-index: 3;
+}
+.main_art p{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: hsl(240, 2%, 79%);
+    z-index: 3;
+}
